@@ -1,0 +1,10 @@
+height <- c(170, 180, 165, 175, 190)
+weight <- c(65, 75, 60, 45, 50)
+data <- data.frame(height = height, weight = weight)
+if(!require(ggplot2)) install.packages("ggplot2")
+library(ggplot2)
+ggplot(data, aes(x = height, y = weight, group = 1)) + 
+  geom_line(color = "blue") + 
+  geom_point(size = 3) + 
+  labs(x = "Height (cm)", y = "Weight (kg)", title = "Height vs Weight") + 
+  theme_classic()
