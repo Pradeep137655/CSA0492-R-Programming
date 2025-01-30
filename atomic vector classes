@@ -1,0 +1,11 @@
+a<-23.4
+b<-"abc"
+c<-65L
+d<-2+3i
+e<-TRUE
+print(class(a))
+print(class(b))
+print(class(c))
+print(class(d))
+print(class(e))
+print(class(charToRaw("hello")))
