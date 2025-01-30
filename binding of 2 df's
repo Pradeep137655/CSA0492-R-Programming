@@ -1,0 +1,8 @@
+stdreg<-c(22,34,54)
+stdname<-c("ram","sita","la")
+course<-c("m1","m2","m3")
+grade<-c("A","D","S")
+d1<-cbind(stdreg,stdname,course,grade)
+d2<-data.frame(stdreg=c(56,78),stdname=c("raj","isha"),course=c("cd","cp"),grade=c("B","C"))
+newdata<-rbind(d1,d2)
+print(newdata)
