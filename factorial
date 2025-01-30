@@ -1,0 +1,8 @@
+factorial<-function(a){
+  fact=1
+  for (i in 1:a) {
+    fact<-i*fact
+  }
+  return(fact)
+}
+print(factorial(5))
