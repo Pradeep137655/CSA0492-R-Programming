@@ -1,0 +1,7 @@
+names<-c("ram","sam","deep")
+age<-c(21,43,12)
+address<-c("ap","up","hp")
+d1<-cbind(names,age,address)
+d2<-data.frame(names=c("raj","pan"),age=c(32,65),address=c("kl","tn"))
+new<-rbind(d1,d2)
+print(new)
