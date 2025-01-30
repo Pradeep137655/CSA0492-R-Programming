@@ -1,0 +1,9 @@
+name<-c("pradeep","siva","praveen","saketh")
+age<-c(19,23,45,67)
+child<-c(FALSE,TRUE,TRUE,FALSE)
+df<-data.frame(name,age,child)
+print(df)
+res<-df[1:2,2:3]
+print(res)
+print(df[3,])
+print(df[,3])
