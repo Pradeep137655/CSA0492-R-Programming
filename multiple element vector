@@ -1,0 +1,4 @@
+print(5:13)
+print(6.7:14.5)
+print(seq(5,9,0.4))
+print(c(5,"abc",TRUE))
