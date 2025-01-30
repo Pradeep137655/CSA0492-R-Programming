@@ -1,0 +1,4 @@
+a<-data.frame(name=c("kala","va","kuri"),id=c(23,45,67))
+b<-data.frame(name=c("prad","eep"),id=c(12,45))
+newd<-merge(a,b,all=TRUE)
+print(newd)
