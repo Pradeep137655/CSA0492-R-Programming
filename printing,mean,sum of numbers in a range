@@ -1,0 +1,8 @@
+numbers_20_to_50 <- 20:50
+print(numbers_20_to_50)
+numbers_20_to_60 <- 20:60 
+mean_20_to_60 <- mean(numbers_20_to_60)
+print(paste("Mean of numbers from 20 to 60:", mean_20_to_60))
+numbers_51_to_91 <- 51:91 
+sum_51_to_91 <- sum(numbers_51_to_91)
+print(paste("Sum of numbers from 51 to 91:", sum_51_to_91))
