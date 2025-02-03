@@ -1,0 +1,9 @@
+gender<-factor(c("female","male","male","female"),levels = c("female","male","others"))
+gender
+print(is.factor(gender))
+class(gender)
+gender[3]
+gender[c(2,4)]
+gender[-3]
+gender[3]<-"others"
+gender
