@@ -1,0 +1,7 @@
+fibno<-function(n){
+  if(n<=1)  return(n)
+  return(fibno(n-1)+fibno(n-2))
+}
+n<-10
+fib<-sapply(0:n,fibno)
+print(fib)
