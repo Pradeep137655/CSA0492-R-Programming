@@ -1,0 +1,30 @@
+display_object_info <- function(obj_name) {
+  if (!exists(obj_name)) {
+    cat(sprintf("Object '%s' not found in the current environment.\n", obj_name))
+    return()
+  }
+  obj <- get(obj_name)
+  class_name <- class(obj)[1]
+  obj_size <- object.size(obj)
+  obj_bytes <- as.numeric(obj_size)
+  cat("Object Details:\n")
+  cat("---------------------------------------------------\n")
+  cat(sprintf("%-25s %-10s %-15s %-10s\n", "Name", "Class", "Size", "Bytes"))
+  cat(sprintf("%-25s %-10s %-15s %10d\n", obj_name, class_name, format(obj_size, units = "auto"), obj_bytes))
+  cat("---------------------------------------------------\n")
+}
+my_object_name <- "x"
+if(!exists(my_object_name)){
+  x<-1:10
+}
+display_object_info(my_object_name)
+my_other_object<-"y"
+if(!exists(my_other_object)){
+  y<-data.frame(a=1:5,b=letters[1:5])
+}
+display_object_info(my_other_object)
+objects_to_check <- c("x", "y", "z") 
+for (obj_name in objects_to_check) {
+  display_object_info(obj_name)
+  cat("\n") 
+}
