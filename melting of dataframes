@@ -1,0 +1,6 @@
+name <- c("pradeep", "siva", "praveen", "saketh")
+age <- c(19, 23, 45, 67)
+child <- c(FALSE, TRUE, TRUE, FALSE)
+df <- data.frame(name, age, child)
+molten <- melt(df, id.vars = c("name", "child"))
+print(molten)
