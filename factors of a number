@@ -1,0 +1,12 @@
+fact <- function(a) {
+  factors <- c()
+  for (i in 1:floor(a/2)) { 
+    if (a %% i == 0) {
+      factors <- c(factors, i)
+    }
+  }
+  factors 
+}
+result <- fact(a)
+print(result) 
+a<-as.integer(readline(prompt = "enter a integer"))
